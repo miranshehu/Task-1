@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET">
+    <h1>Welcome to the questionaire <a href="index.html">&cularr;</a></h1>
+    <p> By filling out this questionaire you will help us know
+        better if our article about <strong>Tiramisu</strong>
+        helped you and was what you were looking for.
+    </p>
+    <p>This is showing because you previosly agreed to fill this questionaire.</p>
+    <input type="radio" name="agreed" checked required>
+    <label for="agreed">Yes</label>
+    <input type="radio" name="agreed">
+    <label for="agreed"><a href="index.html">No, take me back</a></label>
+    <h4><em>This form is completely anonymous and your data wont be shared anywhere.</em></h4>
+    <br>
+    <fieldset>
+        <legend> Information about you </legend>
+        <input type="text" name="" placeholder="Write your name" minlength="5" maxlength="10" required> <br><br>
+        <input type="text" name="surname" placeholder="Write your surname" minlength="5" maxlength="10" required> <br><br>
+        <input type="email" placeholder="Write your email" required> <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend> Questions about the article</legend>
+        <p>Was this article helpful?</p>
+        <input type="radio" name="question" value="Yes" id="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" name="question" value="No" id="No">
+        <label for="No">No</label>
+        <p>On a scale of 1-10, how easy would it be to make a Tiramisu following the article?</p>
+        <input type="range" name="value" id="Scale" min="0" max="10" value="5" step="1">
+        <br>
+        <br>
+        <label for="category">This article for you is ?</label>
+        <select name="category" id="category">
+            <option value>Good</option>
+            <option value>Really Nice</option>
+            <option value>The Best</option>
+        </select>
+        <p>What would you suggest we change?</p>
+        <input list="options" placeholder="Select">
+        <datalist id="options">
+                <option value="Writing">Writing</option>
+                <option value="Design">Design</option>
+                <option value="Style">Style</option>
+        </datalist>
+        <br><br>
+        <textarea name="message" placeholder="Write a message" id="message" cols="30" rows="10"></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
